@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //retira a elevação do appBar
         getSupportActionBar().setElevation(0);
 
         smartTabLayout = findViewById(R.id.viewPagerTab);
@@ -35,7 +36,5 @@ public class MainActivity extends AppCompatActivity {
         );
         viewPager.setAdapter(adapter);
         smartTabLayout.setViewPager(viewPager);
-
-
     }
 }
